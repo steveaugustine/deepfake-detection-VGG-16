@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherlock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="splashScreen">
+        <div class="splashContent">
+          <img class="sher" src="https://media.giphy.com/media/WGVgDPTH1dnfJZPfe0/giphy.gif?cid=790b7611xsifdrn1hbn3wvupwovcfh6njhnx605xxctu3y8p&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Logo" class="logo">
+          <p style="padding: 10px; font-weight: bold;"></p>
+        </div>
+      </div>
+  <header>
+    <div class="container">
+      <h1>Sherlock</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="intro">
+        <h2>Identify DeepFake Images</h2>
+        <p>Upload an image to check if it's authentic or manipulated.</p>
+        <img class="sher" src="https://media.giphy.com/media/WGVgDPTH1dnfJZPfe0/giphy.gif?cid=790b7611xsifdrn1hbn3wvupwovcfh6njhnx605xxctu3y8p&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="">
+        <button id="uploadBtn">Upload Image</button>
+      </section>
+
+      <section id="imageUpload">
+        <input type="file" id="uploadInput" accept="image/*">
+        <div id="preview"></div>
+        <button id="detectBtn">Detect</button>
+      </section>
+
+      <section id="result" class="hidden">
+        <p id="resultMessage"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    
+      <p style="padding: 10px;">&copy; Sherlock</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
