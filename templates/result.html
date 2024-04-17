@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css.map') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.scss') }}" />
+    <style>
+        .hero_area {
+            height: 98vh;
+            position: relative;
+            background-image: url(static/images/hero-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        h1 {
+            position: absolute;
+            left: 19.5%;
+            top: 15%;
+            font-size: 5rem
+        }
+
+        p {
+            position: absolute;
+            left: 20%;
+            color: aliceblue;
+            font-size: 2rem;
+            top: 30%;
+        }
+
+        a {
+            position: absolute;
+            color: aliceblue;
+            left: 20.7%;
+            font-size: 1rem;
+            top: 40%;
+        }
+    </style>
+</head>
+<body class="hero_area ">
+    <h1 style="color: aliceblue;">Classification Result</h1>
+    <p>{{ result }}</p>
+    
+    
+        
+    <img src="{{ image_path }}" alt="Processed Image" style=" position: absolute; right: 40%; top: 40%;">
+    <a style="padding-top: 10%;" href="/">Upload another image</a>
+</body>
+</html>

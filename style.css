@@ -1,0 +1,196 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body expands to at least the height of the viewport */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 40px 0;
+    flex-grow: 1; /* Allows the main content area to grow to fill remaining vertical space */
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  #intro {
+    text-align: center;
+  }
+  
+  #intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .sher{
+    
+    height: 300px;
+    border-radius: 10px;
+  }
+  #uploadBtn {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  #splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of other content */
+  }
+  
+  .splashContent {
+    text-align: center;
+    color: #050505;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  #uploadBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  #imageUpload {
+    display: none;
+  }
+  
+  #preview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #detectBtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #detectBtn:hover {
+    background-color: #218838;
+  }
+  
+  #result {
+    text-align: center;
+  }
+  
+  #resultMessage {
+    font-size: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Aligns the footer to the bottom of the page */
+  }
+  
+  footer ul {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social a {
+    margin-right: 10px;
+  }
+  
+  .social img {
+    width: 30px;
+    height: 30px;
+  }
+  
